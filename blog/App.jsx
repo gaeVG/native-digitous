@@ -11,18 +11,21 @@ import Navigation from './components/Navigation';
 const App = () => {
 
 	const [isLogged, login] = useState(false)
+
+	
 	
 	return (
 		<SafeAreaProvider>
 			{
-				!isLogged
+				isLogged
 				?
 					<Navigation />
 				:
-					<Login />
+					<Login onLogin={login} />
 			}
-        <StatusBar />
-      </SafeAreaProvider>
+
+			<StatusBar />
+		</SafeAreaProvider>
 	);
 }
 
