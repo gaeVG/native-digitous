@@ -64,20 +64,20 @@ const NavigationBar = () => {
 			initialRouteName="Home"
 		>
 			<Tab.Screen
-				name        ="Home"
+				name        ="Timeline"
 				component   ={Home}
 				options     ={
 					{
-						tabBarLabel : "Home"
+						tabBarLabel : "Timeline"
 					}
 				}
 			/>
 			<Tab.Screen
-				name        ="Post"
+				name        ="NewPost"
 				component   ={AddPost}
 				options     ={
 					{
-						tabBarLabel : "Post"
+						tabBarLabel : "New post"
 					}
 				}
 			/>
@@ -86,7 +86,7 @@ const NavigationBar = () => {
 				component   ={Profile}
 				options     ={
 					{
-						tabBarLabel : "Profile"
+						tabBarLabel : "My profile"
 					}
 				}
 			/>
